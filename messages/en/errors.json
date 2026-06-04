@@ -1,0 +1,30 @@
+{
+  "auth": {
+    "emailAlreadyInUse": "This email is already registered. Sign in instead, or use a different email.",
+    "invalidEmail": "Enter a valid email address.",
+    "weakPassword": "Password is too weak. Use at least 6 characters.",
+    "wrongPassword": "Incorrect email or password for this account.",
+    "tooManyRequests": "Too many attempts. Wait a moment and try again.",
+    "generic": "Authentication failed. Please try again.",
+    "registrationFailed": "Registration failed. Please try again.",
+    "serverConfig": "Server configuration is incomplete. Contact the site administrator.",
+    "firestoreProfile": "Could not save your profile. Ensure Firestore is enabled for this project, then try again."
+  },
+  "server": {
+    "unauthorized": "You are not authorized to perform this action.",
+    "propertyNotAvailable": "This property is not available.",
+    "invalidToken": "Invalid or expired session. Please sign in again.",
+    "profileCreateFailed": "Failed to create profile.",
+    "addImage": "Add at least one image.",
+    "cloudinaryRequired": "Images must be uploaded to Cloudinary first.",
+    "uploadFailed": "Image upload failed.",
+    "noImageUrls": "No image URLs returned.",
+    "invalidImageUrl": "Invalid image URL from upload.",
+    "savePropertyFailed": "Failed to save property.",
+    "saveSettingsFailed": "Failed to save settings.",
+    "submitReportFailed": "Could not submit report.",
+    "loadLeadsFailed": "Unable to load lead analytics.",
+    "loadSettingsFailed": "Unable to load settings.",
+    "loadSettingsHint": "Check admin access and Firebase configuration."
+  }
+}

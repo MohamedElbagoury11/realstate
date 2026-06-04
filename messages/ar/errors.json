@@ -1,0 +1,30 @@
+{
+  "auth": {
+    "emailAlreadyInUse": "هذا البريد مسجل مسبقًا. سجّل الدخول أو استخدم بريدًا آخر.",
+    "invalidEmail": "أدخل بريدًا إلكترونيًا صالحًا.",
+    "weakPassword": "كلمة المرور ضعيفة. استخدم 6 أحرف على الأقل.",
+    "wrongPassword": "البريد أو كلمة المرور غير صحيحة.",
+    "tooManyRequests": "محاولات كثيرة. انتظر قليلًا ثم أعد المحاولة.",
+    "generic": "فشل المصادقة. حاول مرة أخرى.",
+    "registrationFailed": "فشل التسجيل. حاول مرة أخرى.",
+    "serverConfig": "إعدادات الخادم غير مكتملة. تواصل مع مسؤول الموقع.",
+    "firestoreProfile": "تعذر حفظ ملفك. تأكد من تفعيل Firestore ثم أعد المحاولة."
+  },
+  "server": {
+    "unauthorized": "غير مصرح لك بهذا الإجراء.",
+    "propertyNotAvailable": "هذا العقار غير متاح.",
+    "invalidToken": "انتهت الجلسة. سجّل الدخول مرة أخرى.",
+    "profileCreateFailed": "تعذر إنشاء الملف الشخصي.",
+    "addImage": "أضف صورة واحدة على الأقل.",
+    "cloudinaryRequired": "يجب رفع الصور إلى Cloudinary أولًا.",
+    "uploadFailed": "فشل رفع الصورة.",
+    "noImageUrls": "لم تُرجع روابط الصور.",
+    "invalidImageUrl": "رابط صورة غير صالح من الرفع.",
+    "savePropertyFailed": "تعذر حفظ العقار.",
+    "saveSettingsFailed": "تعذر حفظ الإعدادات.",
+    "submitReportFailed": "تعذر إرسال البلاغ.",
+    "loadLeadsFailed": "تعذر تحميل تحليلات العملاء المحتملين.",
+    "loadSettingsFailed": "تعذر تحميل الإعدادات.",
+    "loadSettingsHint": "تحقق من صلاحيات المدير وإعدادات Firebase."
+  }
+}

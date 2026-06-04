@@ -1,0 +1,54 @@
+{
+  "types": {
+    "apartment": "شقة",
+    "house": "منزل",
+    "villa": "فيلا",
+    "land": "أرض",
+    "commercial": "تجاري",
+    "other": "أخرى",
+    "apartments": "شقق",
+    "houses": "منازل",
+    "villas": "فلل"
+  },
+  "featured": "مميز",
+  "empty": {
+    "title": "لا توجد عقارات",
+    "description": "جرّب تعديل الفلاتر."
+  },
+  "filters": {
+    "city": "المدينة",
+    "zone": "المنطقة",
+    "propertyType": "نوع العقار",
+    "minPrice": "أقل سعر",
+    "maxPrice": "أعلى سعر",
+    "minRooms": "أقل عدد غرف",
+    "minArea": "أقل مساحة (م²)",
+    "keyword": "كلمة مفتاحية",
+    "apply": "تطبيق الفلاتر",
+    "reset": "إعادة تعيين"
+  },
+  "form": {
+    "title": "العنوان",
+    "price": "السعر",
+    "propertyType": "نوع العقار",
+    "city": "المدينة",
+    "zone": "المنطقة",
+    "area": "المساحة (م²)",
+    "rooms": "الغرف",
+    "bathrooms": "الحمامات",
+    "address": "العنوان",
+    "description": "الوصف",
+    "amenities": "المرافق (مفصولة بفاصلة)",
+    "images": "الصور",
+    "uploadHint": "(ارفع لاستبدال/إضافة)",
+    "existingImages": "تُحفظ {count} صورة/صور حالية ما لم ترفع ملفات جديدة.",
+    "addImage": "أضف صورة واحدة على الأقل.",
+    "updated": "تم تحديث العقار.",
+    "submitted": "تم إرسال العقار لموافقة الإدارة.",
+    "saveFailed": "تعذر حفظ العقار.",
+    "listNew": "إضافة عقار جديد",
+    "submitListing": "إرسال الإعلان",
+    "edit": "تعديل العقار",
+    "saveChanges": "حفظ التغييرات"
+  }
+}

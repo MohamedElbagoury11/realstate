@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "dashboard": "لوحة التحكم"
+  },
+  "dashboard": {
+    "metaTitle": "لوحة البائع",
+    "title": "لوحة البائع",
+    "welcome": "مرحبًا،",
+    "subtitle": "أدر إعلاناتك وتابع الأداء.",
+    "pendingApproval": "حسابك بانتظار موافقة الإدارة.",
+    "pending": "قيد المراجعة",
+    "approved": "معتمد",
+    "rejected": "مرفوض",
+    "hidden": "مخفي",
+    "awaitingTitle": "بانتظار الموافقة",
+    "awaitingDesc": "يجب أن يوافق المدير على حسابك قبل نشر العقارات.",
+    "yourListings": "إعلاناتك",
+    "noListings": "لا توجد إعلانات بعد"
+  },
+  "edit": {
+    "metaTitle": "تعديل العقار",
+    "back": "← العودة للوحة التحكم"
+  },
+  "analytics": {
+    "totalViews": "إجمالي المشاهدات",
+    "totalLeads": "إجمالي العملاء",
+    "conversion": "التحويل",
+    "conversionHint": "العملاء ÷ المشاهدات",
+    "listings": "الإعلانات",
+    "perListing": "لكل إعلان",
+    "property": "العقار",
+    "status": "الحالة",
+    "views": "المشاهدات",
+    "leads": "العملاء",
+    "conv": "تحويل",
+    "noListings": "لا توجد إعلانات بعد."
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "markAllRead": "تعليم الكل كمقروء",
+    "empty": "لا توجد إشعارات بعد.",
+    "markRead": "تعليم كمقروء",
+    "types": {
+      "property.approved": {
+        "title": "تم اعتماد العقار",
+        "message": "\"{title}\" متاح الآن على إستيت هب."
+      },
+      "property.rejected": {
+        "title": "تم رفض العقار",
+        "message": "لم يُعتمد \"{title}\". تواصل مع الدعم للتفاصيل."
+      },
+      "property.hidden": {
+        "title": "تم إخفاء العقار",
+        "message": "تم إخفاء \"{title}\" من البحث العام."
+      },
+      "property.lead": {
+        "title": "عميل محتمل جديد",
+        "message": "تواصل أحد الأشخاص بخصوص \"{title}\"."
+      },
+      "property.reported": {
+        "title": "بلاغ على العقار",
+        "message": "تلقى \"{title}\" بلاغًا."
+      }
+    }
+  }
+}

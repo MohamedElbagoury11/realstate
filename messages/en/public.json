@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "badge": "Premium real estate marketplace",
+    "title": "Discover your next address",
+    "subtitle": "Verified listings, platform-managed inquiries, and transparent seller moderation.",
+    "browse": "Browse listings",
+    "listProperty": "List your property"
+  },
+  "home": {
+    "featuredListings": "Featured listings",
+    "latestListings": "Latest listings",
+    "browseByCategory": "Browse by category"
+  },
+  "trust": {
+    "title": "Why EstateHub",
+    "verifiedTitle": "Verified listings",
+    "verifiedDesc": "Every property is reviewed by our team before going live.",
+    "contactTitle": "Platform contact",
+    "contactDesc": "Inquiries go through EstateHub — seller details stay private.",
+    "analyticsTitle": "Transparent analytics",
+    "analyticsDesc": "Sellers see views and leads; admins track conversion performance."
+  },
+  "search": {
+    "title": "Search properties",
+    "metaTitle": "Search Properties",
+    "metaDescription": "Find apartments, houses, and commercial listings on EstateHub.",
+    "results": "{count} results",
+    "loadMore": "Load more"
+  },
+  "propertyDetail": {
+    "notFound": "Property not found",
+    "description": "Description",
+    "amenities": "Amenities",
+    "rooms": "Rooms",
+    "bathrooms": "Bathrooms",
+    "area": "Area",
+    "listed": "Listed",
+    "imageAlt": "{title} {index}"
+  },
+  "contact": {
+    "barCopy": "Contact our team. Your inquiry is handled by EstateHub, not the seller directly.",
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "email": "Email",
+    "stickyAria": "Contact EstateHub",
+    "stickyLabel": "Contact EstateHub about this listing",
+    "whatsappPrefill": "Hi, I am interested in a property listing on EstateHub.",
+    "whatsappPrefillShort": "Hi, I am interested in a property on EstateHub.",
+    "emailSubject": "Property inquiry"
+  },
+  "share": {
+    "share": "Share",
+    "report": "Report",
+    "shareText": "Check out {title} on EstateHub",
+    "linkCopied": "Link copied to clipboard",
+    "reportSubmitted": "Report submitted. Thank you.",
+    "reason": "Reason",
+    "reasonSpam": "Spam",
+    "reasonMisleading": "Misleading",
+    "reasonDuplicate": "Duplicate",
+    "reasonOther": "Other",
+    "detailsPlaceholder": "Optional details",
+    "submitReport": "Submit report"
+  },
+  "orgJsonLd": {
+    "description": "Browse and inquire about verified property listings."
+  }
+}

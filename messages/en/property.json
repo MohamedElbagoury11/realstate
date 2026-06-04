@@ -1,0 +1,54 @@
+{
+  "types": {
+    "apartment": "Apartment",
+    "house": "House",
+    "villa": "Villa",
+    "land": "Land",
+    "commercial": "Commercial",
+    "other": "Other",
+    "apartments": "Apartments",
+    "houses": "Houses",
+    "villas": "Villas"
+  },
+  "featured": "Featured",
+  "empty": {
+    "title": "No properties found",
+    "description": "Try adjusting your filters."
+  },
+  "filters": {
+    "city": "City",
+    "zone": "Zone",
+    "propertyType": "Property type",
+    "minPrice": "Min price",
+    "maxPrice": "Max price",
+    "minRooms": "Min rooms",
+    "minArea": "Min area (m²)",
+    "keyword": "Keyword",
+    "apply": "Apply filters",
+    "reset": "Reset"
+  },
+  "form": {
+    "title": "Title",
+    "price": "Price",
+    "propertyType": "Property type",
+    "city": "City",
+    "zone": "Zone",
+    "area": "Area (m²)",
+    "rooms": "Rooms",
+    "bathrooms": "Bathrooms",
+    "address": "Address",
+    "description": "Description",
+    "amenities": "Amenities (comma-separated)",
+    "images": "Images",
+    "uploadHint": "(upload to replace/add)",
+    "existingImages": "{count} existing image(s) kept unless you upload new files.",
+    "addImage": "Add at least one image.",
+    "updated": "Property updated.",
+    "submitted": "Property submitted for admin approval.",
+    "saveFailed": "Failed to save property.",
+    "listNew": "List a new property",
+    "submitListing": "Submit listing",
+    "edit": "Edit property",
+    "saveChanges": "Save changes"
+  }
+}

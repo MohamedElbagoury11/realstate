@@ -1,0 +1,14 @@
+{
+  "passwordMin": "Password must be at least 6 characters",
+  "nameRequired": "Name is required",
+  "emailInvalid": "Enter a valid email address",
+  "contactPhoneRequired": "Contact phone is required",
+  "whatsappRequired": "WhatsApp number is required",
+  "contactEmailRequired": "Valid email is required",
+  "titleMin": "Title must be at least 3 characters",
+  "descriptionMin": "Description must be at least 20 characters",
+  "cityMin": "City is required",
+  "zoneMin": "Zone is required",
+  "pricePositive": "Price must be greater than zero",
+  "areaPositive": "Area must be greater than zero"
+}

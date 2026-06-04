@@ -1,0 +1,54 @@
+{
+  "brand": "إستيت هب",
+  "brandMonogram": "إه",
+  "loading": "جاري التحميل",
+  "viewAll": "عرض الكل",
+  "seeAll": "عرض الكل",
+  "back": "رجوع",
+  "save": "حفظ",
+  "cancel": "إلغاء",
+  "delete": "حذف",
+  "edit": "تعديل",
+  "apply": "تطبيق",
+  "reset": "إعادة تعيين",
+  "any": "الكل",
+  "yes": "نعم",
+  "no": "لا",
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "switch": "اللغة"
+  },
+  "nav": {
+    "search": "بحث",
+    "admin": "الإدارة",
+    "dashboard": "لوحة التحكم",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "seller": "البائع"
+  },
+  "footer": {
+    "copyright": "© {year} إستيت هب — إعلانات موثقة · استفسارات عبر المنصة"
+  },
+  "units": {
+    "beds": "غرف",
+    "baths": "حمامات",
+    "sqm": "م²",
+    "views": "مشاهدات",
+    "leads": "عملاء محتملون",
+    "percent": "%"
+  },
+  "status": {
+    "pending": "قيد المراجعة",
+    "approved": "معتمد",
+    "rejected": "مرفوض",
+    "hidden": "مخفي",
+    "all": "الكل"
+  },
+  "roles": {
+    "customer": "عميل",
+    "seller": "بائع",
+    "admin": "مدير"
+  }
+}

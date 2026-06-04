@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "dashboard": "Dashboard"
+  },
+  "dashboard": {
+    "metaTitle": "Seller Dashboard",
+    "title": "Seller dashboard",
+    "welcome": "Welcome,",
+    "subtitle": "Manage listings and track performance.",
+    "pendingApproval": "Your account is pending admin approval.",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "hidden": "Hidden",
+    "awaitingTitle": "Awaiting approval",
+    "awaitingDesc": "An admin must approve your seller account before you can list properties.",
+    "yourListings": "Your listings",
+    "noListings": "No listings yet"
+  },
+  "edit": {
+    "metaTitle": "Edit Property",
+    "back": "← Back to dashboard"
+  },
+  "analytics": {
+    "totalViews": "Total views",
+    "totalLeads": "Total leads",
+    "conversion": "Conversion",
+    "conversionHint": "Leads ÷ views",
+    "listings": "Listings",
+    "perListing": "Per listing",
+    "property": "Property",
+    "status": "Status",
+    "views": "Views",
+    "leads": "Leads",
+    "conv": "Conv.",
+    "noListings": "No listings yet."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all read",
+    "empty": "No notifications yet.",
+    "markRead": "Mark read",
+    "types": {
+      "property.approved": {
+        "title": "Property approved",
+        "message": "\"{title}\" is now live on EstateHub."
+      },
+      "property.rejected": {
+        "title": "Property rejected",
+        "message": "\"{title}\" was not approved. Contact support for details."
+      },
+      "property.hidden": {
+        "title": "Property hidden",
+        "message": "\"{title}\" has been hidden from public search."
+      },
+      "property.lead": {
+        "title": "New lead",
+        "message": "Someone contacted you about \"{title}\"."
+      },
+      "property.reported": {
+        "title": "Property reported",
+        "message": "\"{title}\" received a report."
+      }
+    }
+  }
+}

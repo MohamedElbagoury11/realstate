@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "badge": "سوق عقارات مميز",
+    "title": "اكتشف عنوانك القادم",
+    "subtitle": "إعلانات موثقة، استفسارات عبر المنصة، ومراجعة شفافة للبائعين.",
+    "browse": "تصفح الإعلانات",
+    "listProperty": "أضف عقارك"
+  },
+  "home": {
+    "featuredListings": "إعلانات مميزة",
+    "latestListings": "أحدث الإعلانات",
+    "browseByCategory": "تصفح حسب الفئة"
+  },
+  "trust": {
+    "title": "لماذا إستيت هب",
+    "verifiedTitle": "إعلانات موثقة",
+    "verifiedDesc": "يُراجع فريقنا كل عقار قبل النشر.",
+    "contactTitle": "تواصل عبر المنصة",
+    "contactDesc": "الاستفسارات عبر إستيت هب — بيانات البائع تبقى خاصة.",
+    "analyticsTitle": "تحليلات شفافة",
+    "analyticsDesc": "البائعون يرون المشاهدات والعملاء؛ الإدارة تتابع التحويل."
+  },
+  "search": {
+    "title": "بحث العقارات",
+    "metaTitle": "بحث العقارات",
+    "metaDescription": "اعثر على شقق ومنازل وعقارات تجارية على إستيت هب.",
+    "results": "{count} نتيجة",
+    "loadMore": "تحميل المزيد"
+  },
+  "propertyDetail": {
+    "notFound": "العقار غير موجود",
+    "description": "الوصف",
+    "amenities": "المرافق",
+    "rooms": "الغرف",
+    "bathrooms": "الحمامات",
+    "area": "المساحة",
+    "listed": "تاريخ النشر",
+    "imageAlt": "{title} {index}"
+  },
+  "contact": {
+    "barCopy": "تواصل مع فريقنا. يُعالج استفسارك عبر إستيت هب وليس البائع مباشرة.",
+    "whatsapp": "واتساب",
+    "call": "اتصال",
+    "email": "بريد",
+    "stickyAria": "تواصل مع إستيت هب",
+    "stickyLabel": "تواصل مع إستيت هب بخصوص هذا الإعلان",
+    "whatsappPrefill": "مرحبًا، أنا مهتم بإعلان عقار على إستيت هب.",
+    "whatsappPrefillShort": "مرحبًا، أنا مهتم بعقار على إستيت هب.",
+    "emailSubject": "استفسار عقاري"
+  },
+  "share": {
+    "share": "مشاركة",
+    "report": "إبلاغ",
+    "shareText": "اطلع على {title} على إستيت هب",
+    "linkCopied": "تم نسخ الرابط",
+    "reportSubmitted": "تم إرسال البلاغ. شكرًا لك.",
+    "reason": "السبب",
+    "reasonSpam": "بريد مزعج",
+    "reasonMisleading": "مضلل",
+    "reasonDuplicate": "مكرر",
+    "reasonOther": "أخرى",
+    "detailsPlaceholder": "تفاصيل اختيارية",
+    "submitReport": "إرسال البلاغ"
+  },
+  "orgJsonLd": {
+    "description": "تصفح واستفسر عن إعلانات عقارية موثقة."
+  }
+}

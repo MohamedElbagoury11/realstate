@@ -1,0 +1,16 @@
+{
+  "root": {
+    "title": "EstateHub — Real Estate Marketplace",
+    "titleTemplate": "%s | EstateHub",
+    "description": "Browse, search, and list properties. Production-ready real estate platform."
+  },
+  "home": {
+    "title": "Find your next home",
+    "description": "Browse approved property listings — apartments, houses, villas, and commercial spaces on EstateHub.",
+    "ogTitle": "EstateHub — Real Estate Marketplace",
+    "ogDescription": "Find your next home with verified listings."
+  },
+  "property": {
+    "titleTemplate": "{title} | EstateHub"
+  }
+}

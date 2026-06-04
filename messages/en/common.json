@@ -1,0 +1,54 @@
+{
+  "brand": "EstateHub",
+  "brandMonogram": "EH",
+  "loading": "Loading",
+  "viewAll": "View all",
+  "seeAll": "See all",
+  "back": "Back",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "edit": "Edit",
+  "apply": "Apply",
+  "reset": "Reset",
+  "any": "Any",
+  "yes": "Yes",
+  "no": "No",
+  "language": {
+    "en": "English",
+    "ar": "العربية",
+    "switch": "Language"
+  },
+  "nav": {
+    "search": "Search",
+    "admin": "Admin",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "seller": "Seller"
+  },
+  "footer": {
+    "copyright": "© {year} EstateHub — Verified listings · Platform-managed inquiries"
+  },
+  "units": {
+    "beds": "beds",
+    "baths": "baths",
+    "sqm": "m²",
+    "views": "views",
+    "leads": "leads",
+    "percent": "%"
+  },
+  "status": {
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "hidden": "Hidden",
+    "all": "All"
+  },
+  "roles": {
+    "customer": "Customer",
+    "seller": "Seller",
+    "admin": "Admin"
+  }
+}
