@@ -11,6 +11,7 @@ export async function approveSellerAction(userId: string) {
   await userService.approveSeller(session, userId);
   await auditService.log(session, 'seller.approved', 'user', userId);
   revalidatePath('/admin/users');
+  revalidatePath('/seller/dashboard');
 }
 
 export async function rejectSellerAction(userId: string) {
@@ -19,4 +20,5 @@ export async function rejectSellerAction(userId: string) {
   await userService.rejectSeller(session, userId);
   await auditService.log(session, 'seller.rejected', 'user', userId);
   revalidatePath('/admin/users');
+  revalidatePath('/seller/dashboard');
 }

@@ -11,7 +11,7 @@ export class UserService {
 
   async getSellersPendingApproval(): Promise<User[]> {
     const sellers = await this.users.getByRole('seller');
-    return sellers.filter((u) => !u.approved);
+    return sellers.filter((u) => !u.approved && !u.rejected);
   }
 
   async approveSeller(actor: SessionUser, userId: string): Promise<void> {
@@ -20,12 +20,16 @@ export class UserService {
     if (!user || user.role !== 'seller') {
       throw new AppError('Seller not found', 'SELLER_NOT_FOUND', 404);
     }
-    await this.users.update(userId, { approved: true });
+    await this.users.update(userId, { approved: true, rejected: false });
   }
 
   async rejectSeller(actor: SessionUser, userId: string): Promise<void> {
     this.assertAdmin(actor);
-    await this.users.update(userId, { approved: false });
+    const user = await this.users.getById(userId);
+    if (!user || user.role !== 'seller') {
+      throw new AppError('Seller not found', 'SELLER_NOT_FOUND', 404);
+    }
+    await this.users.update(userId, { approved: false, rejected: true });
   }
 
   async deleteUser(actor: SessionUser, userId: string): Promise<void> {

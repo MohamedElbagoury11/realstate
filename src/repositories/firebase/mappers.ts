@@ -29,6 +29,7 @@ export function mapUserDoc(id: string, data: DocumentData): User {
     phone: data.phone ? String(data.phone) : undefined,
     role: data.role as User['role'],
     approved: Boolean(data.approved),
+    rejected: Boolean(data.rejected),
     createdAt: String(data.createdAt ?? new Date().toISOString()),
   };
 }

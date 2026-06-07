@@ -41,26 +41,29 @@
     "empty": "No notifications yet.",
     "markRead": "Mark read",
     "types": {
-      "property.approved": {
+      "property":
+      {
+        "approved": {
         "title": "Property approved",
         "message": "\"{title}\" is now live on EstateHub."
       },
-      "property.rejected": {
+      "rejected": {
         "title": "Property rejected",
         "message": "\"{title}\" was not approved. Contact support for details."
       },
-      "property.hidden": {
+      "hidden": {
         "title": "Property hidden",
         "message": "\"{title}\" has been hidden from public search."
       },
-      "property.lead": {
+      "lead": {
         "title": "New lead",
         "message": "Someone contacted you about \"{title}\"."
       },
-      "property.reported": {
+      "reported": {
         "title": "Property reported",
         "message": "\"{title}\" received a report."
       }
+    }
     }
   }
 }

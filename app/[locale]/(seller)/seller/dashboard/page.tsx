@@ -40,6 +40,8 @@ export default async function SellerDashboardPage({
   const ts = await getTranslations({ locale, namespace: 'common' });
 
   const session = await getServerSession();
+  const isApprovedSeller = Boolean(session?.approved);
+  const isRejectedSeller = Boolean(session?.rejected);
   const [properties, analytics, notifications] = await Promise.all([
     fetchSellerProperties(),
     fetchSellerAnalytics(),
@@ -60,13 +62,17 @@ export default async function SellerDashboardPage({
         <h1 className="text-3xl font-bold tracking-tight">{t('dashboard.title')}</h1>
         <p className="mt-2 text-[var(--muted)]">
           {t('dashboard.welcome')} {session?.name}.{' '}
-          {session?.approved ? t('dashboard.subtitle') : t('dashboard.pendingApproval')}
+          {isApprovedSeller
+            ? t('dashboard.subtitle')
+            : isRejectedSeller
+              ? t('dashboard.rejected')
+              : t('dashboard.pendingApproval')}
         </p>
       </div>
 
-      {session?.approved && analytics && <SellerAnalyticsPanel analytics={analytics} />}
+      {isApprovedSeller && analytics && <SellerAnalyticsPanel analytics={analytics} />}
 
-      {session?.approved && (
+      {isApprovedSeller && (
         <div className="grid gap-4 sm:grid-cols-4">
           <StatCard label={ts('status.pending')} value={statusCounts.pending ?? 0} />
           <StatCard label={ts('status.approved')} value={statusCounts.approved ?? 0} />
@@ -76,12 +82,14 @@ export default async function SellerDashboardPage({
       )}
 
       <div className="grid gap-8 lg:grid-cols-2">
-        {session?.approved && <SellerNotifications notifications={notifications} />}
-        {session?.approved ? (
+        {isApprovedSeller && <SellerNotifications notifications={notifications} />}
+        {isApprovedSeller ? (
           <CreatePropertyForm />
         ) : (
           <EmptyState
-            title={t('dashboard.awaitingTitle')}
+            title={
+              isRejectedSeller ? t('dashboard.rejected') : t('dashboard.awaitingTitle')
+            }
             description={t('dashboard.awaitingDesc')}
           />
         )}

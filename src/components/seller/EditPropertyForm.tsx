@@ -13,6 +13,7 @@ export function EditPropertyForm({ property }: { property: Property }) {
     <PropertyForm
       title={t('form.edit')}
       submitLabel={t('form.saveChanges')}
+      successMessage={t('form.submitted')}
       initial={property}
       onSubmit={async (data: PropertyFormInput, imageUrls) => {
         await updatePropertyAction(property.id, data, imageUrls);

@@ -37,6 +37,7 @@ export async function registerProfileAction(
       name: existing.name,
       role: existing.role,
       approved: existing.approved,
+      rejected: existing.rejected,
     });
     return {
       user: {
@@ -45,6 +46,7 @@ export async function registerProfileAction(
         name: existing.name,
         role: existing.role,
         approved: existing.approved,
+        rejected: existing.rejected,
       },
     };
   }
@@ -64,6 +66,7 @@ export async function registerProfileAction(
     name: profile.name,
     role: profile.role,
     approved: profile.approved,
+    rejected: profile.rejected,
   };
   await setSessionCookie(sessionUser);
   return { user: sessionUser };

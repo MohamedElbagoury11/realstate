@@ -39,7 +39,8 @@ service cloud.firestore {
       allow update: if isAdmin()
         || (isApprovedSeller()
           && resource.data.sellerId == request.auth.uid
-          && request.resource.data.status == resource.data.status);
+          && request.resource.data.sellerId == resource.data.sellerId
+          && request.resource.data.status == 'pending');
       allow delete: if isAdmin()
         || (isApprovedSeller() && resource.data.sellerId == request.auth.uid);
     }

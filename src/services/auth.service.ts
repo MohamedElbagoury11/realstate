@@ -17,6 +17,7 @@ export class AuthService {
         name: profile.name,
         role: profile.role,
         approved: profile.approved,
+        rejected: profile.rejected,
       };
     } catch {
       return null;

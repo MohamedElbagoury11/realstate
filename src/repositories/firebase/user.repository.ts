@@ -37,6 +37,7 @@ export class FirebaseUserRepository implements UserRepository {
     await this.collection().doc(id).set({
       ...data,
       approved: data.approved ?? data.role !== 'seller',
+      rejected: data.rejected ?? false,
       createdAt: now,
     });
   }

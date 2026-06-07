@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
@@ -27,17 +27,19 @@ const PROPERTY_TYPES: PropertyType[] = [
 type Props = {
   title: string;
   submitLabel: string;
+  successMessage?: string;
   initial?: Property;
   onSubmit: (data: PropertyFormInput, imageUrls: string[]) => Promise<void>;
 };
 
-export function PropertyForm({ title, submitLabel, initial, onSubmit }: Props) {
-  const formRef = useRef<HTMLFormElement>(null);
+export function PropertyForm({ title, submitLabel, successMessage, initial, onSubmit }: Props) {
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [messageKind, setMessageKind] = useState<'success' | 'error' | null>(null);
   const [keepImages] = useState<string[]>(initial?.images ?? []);
   const [amenitiesText, setAmenitiesText] = useState(initial?.amenities.join(', ') ?? '');
+  const [files, setFiles] = useState<File[]>([]);
+  const [fileInputKey, setFileInputKey] = useState(0);
 
   const tv = useTranslations('validation');
   const tForm = useTranslations('property');
@@ -71,15 +73,13 @@ export function PropertyForm({ title, submitLabel, initial, onSubmit }: Props) {
   });
 
   async function handleFormSubmit(data: PropertyFormInput) {
-    const input = formRef.current?.querySelector<HTMLInputElement>('input[type="file"]');
-    const files = input?.files;
     setSubmitting(true);
     setMessage(null);
     setMessageKind(null);
     try {
       let imageUrls = keepImages;
-      if (files?.length) {
-        const uploaded = await uploadPropertyImages(Array.from(files));
+      if (files.length) {
+        const uploaded = await uploadPropertyImages(files);
         imageUrls = [...keepImages, ...uploaded];
       }
       if (!imageUrls.length) {
@@ -94,10 +94,11 @@ export function PropertyForm({ title, submitLabel, initial, onSubmit }: Props) {
         .filter(Boolean);
       await onSubmit({ ...data, amenities }, imageUrls);
       if (!initial) {
-        if (input) input.value = '';
         reset();
+        setFiles([]);
+        setFileInputKey((key) => key + 1);
       }
-      setMessage(initial ? tForm('form.updated') : tForm('form.submitted'));
+      setMessage(successMessage ?? (initial ? tForm('form.updated') : tForm('form.submitted')));
       setMessageKind('success');
     } catch (error) {
       const key = getServerErrorKey(error);
@@ -110,7 +111,6 @@ export function PropertyForm({ title, submitLabel, initial, onSubmit }: Props) {
 
   return (
     <form
-      ref={formRef}
       onSubmit={handleSubmit(handleFormSubmit)}
       className="space-y-4 rounded-xl border border-zinc-200 bg-white p-6"
     >
@@ -190,7 +190,13 @@ export function PropertyForm({ title, submitLabel, initial, onSubmit }: Props) {
             {tForm('form.existingImages', { count: keepImages.length })}
           </p>
         )}
-        <input type="file" accept="image/jpeg,image/png,image/webp" multiple />
+        <input
+          key={fileInputKey}
+          type="file"
+          accept="image/jpeg,image/png,image/webp"
+          multiple
+          onChange={(event) => setFiles(Array.from(event.target.files ?? []))}
+        />
       </label>
       {message && (
         <p

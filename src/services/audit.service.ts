@@ -15,15 +15,18 @@ export class AuditService {
     if (actor.role !== 'admin') {
       throw new AppError('Admin access required', 'FORBIDDEN', 403);
     }
-    await this.audit.create({
+    const entry: Omit<AuditLogEntry, 'id'> = {
       adminId: actor.id,
       adminEmail: actor.email,
       action,
       entityType,
       entityId,
-      metadata,
       createdAt: new Date().toISOString(),
-    });
+    };
+    if (metadata !== undefined) {
+      entry.metadata = metadata;
+    }
+    await this.audit.create(entry);
   }
 
   async list(actor: SessionUser, limit?: number): Promise<AuditLogEntry[]> {

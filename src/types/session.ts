@@ -6,4 +6,5 @@ export interface SessionUser {
   name: string;
   role: UserRole;
   approved: boolean;
+  rejected?: boolean;
 }

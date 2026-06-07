@@ -7,13 +7,15 @@ export interface User {
   phone?: string;
   role: UserRole;
   approved: boolean;
+  rejected: boolean;
   createdAt: string;
 }
 
-export type CreateUserInput = Omit<User, 'id' | 'createdAt' | 'approved'> & {
+export type CreateUserInput = Omit<User, 'id' | 'createdAt' | 'approved' | 'rejected'> & {
   approved?: boolean;
+  rejected?: boolean;
 };
 
 export type UpdateUserInput = Partial<
-  Pick<User, 'name' | 'phone' | 'role' | 'approved'>
+  Pick<User, 'name' | 'phone' | 'role' | 'approved' | 'rejected'>
 >;

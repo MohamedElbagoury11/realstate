@@ -124,11 +124,22 @@ export class PropertyService {
     const existing = await this.properties.getById(id);
     if (!existing) throw new AppError('Property not found', 'NOT_FOUND', 404);
     this.assertCanEdit(actor, existing);
-    const { status: _s, sellerId: _sid, id: _id, createdAt: _c, ...safe } = data;
     if (actor.role !== 'admin' && ('status' in data || 'sellerId' in data)) {
       throw new AppError('Cannot change status or seller', 'FORBIDDEN', 403);
     }
-    await this.properties.update(id, safe);
+    const safe = { ...data };
+    delete safe.status;
+    delete safe.sellerId;
+    delete safe.id;
+    delete safe.createdAt;
+    const updateData =
+      actor.role === 'admin'
+        ? safe
+        : {
+            ...safe,
+            status: 'pending' as const,
+          };
+    await this.properties.update(id, updateData);
     if (actor.role === 'admin') {
       await auditService.log(actor, 'property.updated', 'property', id, {
         fields: Object.keys(safe),

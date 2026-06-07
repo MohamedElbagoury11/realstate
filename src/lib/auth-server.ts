@@ -19,6 +19,7 @@ export async function getServerSession(): Promise<SessionUser | null> {
       name: profile.name,
       role: profile.role,
       approved: profile.approved,
+      rejected: profile.rejected,
     };
   } catch {
     return null;

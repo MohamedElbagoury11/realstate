@@ -41,26 +41,28 @@
     "empty": "لا توجد إشعارات بعد.",
     "markRead": "تعليم كمقروء",
     "types": {
-      "property.approved": {
+      "property":{
+      "approved": {
         "title": "تم اعتماد العقار",
         "message": "\"{title}\" متاح الآن على إستيت هب."
       },
-      "property.rejected": {
+      "rejected": {
         "title": "تم رفض العقار",
         "message": "لم يُعتمد \"{title}\". تواصل مع الدعم للتفاصيل."
       },
-      "property.hidden": {
+      "hidden": {
         "title": "تم إخفاء العقار",
         "message": "تم إخفاء \"{title}\" من البحث العام."
       },
-      "property.lead": {
+      "lead": {
         "title": "عميل محتمل جديد",
         "message": "تواصل أحد الأشخاص بخصوص \"{title}\"."
       },
-      "property.reported": {
+      "reported": {
         "title": "بلاغ على العقار",
         "message": "تلقى \"{title}\" بلاغًا."
       }
+    }
     }
   }
 }
