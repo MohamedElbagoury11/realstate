@@ -3,6 +3,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { AuthProvider } from '@/components/providers/AuthProvider';
+import { NavigationProgress } from '@/components/ui/NavigationProgress';
 import { routing, isRtlLocale } from '@/i18n/routing';
 import { getRootMetadata } from '@/lib/metadata-i18n';
 import '../globals.css';
@@ -51,7 +52,10 @@ export default async function LocaleLayout({
     <html lang={locale} dir={dir} className={`${geistSans.variable} ${geistMono.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
         <NextIntlClientProvider messages={messages}>
-          <AuthProvider>{children}</AuthProvider>
+          <AuthProvider>
+            <NavigationProgress />
+            {children}
+          </AuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>
